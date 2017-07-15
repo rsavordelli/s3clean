@@ -1,6 +1,6 @@
 import boto3
 client = boto3.client('s3')
-bucket = "savordel-big"
+bucket = "BucketName"
 # print("Collecting data from" + bucket)
 paginator = client.get_paginator('list_object_versions')
 result = paginator.paginate(Bucket=bucket)
